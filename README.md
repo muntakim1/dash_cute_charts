@@ -13,7 +13,7 @@ Get started with demo example:
 1. `git clone https://github.com/muntakim1/dash_cute_charts.git`
 2. Install Dash and its dependencies: https://dash.plotly.com/installation
 3. Run `python usage.py`
-4. Visit http://localhost:8050 in your web browser
+4. Visit http://localhost:8050 in your web browser, Click here for the [Live Demo](https://dash-cute-chart-example.herokuapp.com/)
 
 ## Usage 👨‍🏫
 
