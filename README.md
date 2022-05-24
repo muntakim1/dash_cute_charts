@@ -1,8 +1,10 @@
-## 📣 Idea
+## 💡 Idea
+
+![](https://img.shields.io/badge/-ReactJS-orange) ![](https://img.shields.io/badge/-PYTHON-green) ![](https://img.shields.io/badge/-DASH-red) ![](https://img.shields.io/github/issues/muntakim1/dash_cute_charts) [![GitHub license](https://img.shields.io/github/license/muntakim1/dash_cute_charts)](https://github.com/muntakim1/dash_cute_charts/blob/main/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/muntakim1/dash_cute_charts)](https://github.com/muntakim1/dash_cute_charts/stargazers) [![GitHub forks](https://img.shields.io/github/forks/muntakim1/dash_cute_charts)](https://github.com/muntakim1/dash_cute_charts/network)
 
 [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) 📊 is an interesting visualization library written in React based on chart.xkcd, the chart style of [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) is so beautiful that I love it at first sight. 😍😍
 
-There is no doubt that Modern JavaScript has more advantages in interaction as well as visual effects. Besides that, as we all know, Python 🐍 is an expressive language and is loved by data science community. To build data sciecne products the community love to use [dash](https://dash.plotly.com/). I tried to combine both dashplotly with [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) ended up building the [dash_cute_charts]() component for dash.
+There is no doubt that Modern JavaScript has more advantages in interaction as well as visual effects. Besides that, as we all know, Python 🐍 is an expressive language and is loved by data science community. To build data sciecne products the community love to use [dash](https://dash.plotly.com/). I tried to combine both dashplotly with [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) ended up building the [dash_cute_charts](https://github.com/muntakim1/dash_cute_charts) component for dash.
 
 ![image](/demo-assets/20190819131226.gif)
 
@@ -12,7 +14,7 @@ Get started with demo example:
 2. Run `python usage.py`
 3. Visit http://localhost:8050 in your web browser
 
-## Usage
+## Usage 👨‍🏫
 
 ```python
 import dash
@@ -79,9 +81,9 @@ if __name__ == "__main__":
     app.run_server(debug=True)
 ```
 
-## Components
+## Components 🧱
 
-### LineChart
+### LineChart 📈
 
 <strong>id</strong> (String)(Required): Id to identify in dash callbacks.
 <strong>title</strong>(String)(Optional): Title for the chart.
@@ -94,7 +96,7 @@ Example:`[{"label": "Plan", "data": [30, 70, 200, 300, 500, 800, 1500, 2900, 500
 <strong>options</strong>(Array)(Optional): Pass [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) options as object array
 ` options=[{"yTickCount": 2}],`
 
-### Barchart
+### Barchart 📊
 
 <strong>id</strong> (String)(Required): Id to identify in dash callbacks.
 <strong>title</strong>(String)(Optional): Title for the chart.
@@ -105,7 +107,7 @@ Example:`[{"label": "Plan", "data": [30, 70, 200, 300, 500, 800, 1500, 2900, 500
 Example:` {"data": [30, 70,] },`
 <strong>options</strong>(Array)(Optional): Pass [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) options as object array `options=[{"yTickCount": 2}],`
 
-### PieChart
+### PieChart 🧿
 
 <strong>id</strong> (String)(Required): Id to identify in dash callbacks.
 <strong>title</strong>(String)(Optional): Title for the chart.
@@ -154,3 +156,19 @@ If you have selected install_dependencies during the prompt, you can skip this p
         ```
         $ python usage.py
         ```
+
+## Maintainer 🤵
+
+![](/demo-assets/rsz_profile.jpg)
+Muntakimur Rahaman
+IBM Certified Data Scientist
+website: [www.muntakim.xyz](www.muntakim.xyz)
+
+## Credits 🙏
+
+[chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react)
+[chart.xkcd](https://github.com/timqian/chart.xkcd)
+
+## 📃 License
+
+MIT [©muntakim](https://github.com/muntakim1/)
