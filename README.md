@@ -10,11 +10,20 @@ There is no doubt that Modern JavaScript has more advantages in interaction as w
 
 Get started with demo example:
 
-1. Install Dash and its dependencies: https://dash.plotly.com/installation
-2. Run `python usage.py`
-3. Visit http://localhost:8050 in your web browser
+1. `git clone https://github.com/muntakim1/dash_cute_charts.git`
+2. Install Dash and its dependencies: https://dash.plotly.com/installation
+3. Run `python usage.py`
+4. Visit http://localhost:8050 in your web browser
 
 ## Usage 👨‍🏫
+
+### Install
+
+Install the dash-cute-charts from pypip using below command
+
+`pip install dash-cute-charts `
+
+### Usage with Dash
 
 ```python
 import dash
@@ -86,35 +95,53 @@ if __name__ == "__main__":
 ### LineChart 📈
 
 <strong>id</strong> (String)(Required): Id to identify in dash callbacks.
+
 <strong>title</strong>(String)(Optional): Title for the chart.
+
 <strong>xLabel</strong>(String)(Optional): X axis label.
+
 <strong>yLabel</strong>(String)(Optional): Y axis label.
+
 <strong>labels</strong>(Array)(Required): Array of labels (Strings / Numbers)
 Example:`python [30, 70, 200, 300, 500, 800, 1500, 2900, 5000, 8000]`
+
 <strong>dataset</strong>(Array)(Required): Array of Python Dictionary.
 Example:`[{"label": "Plan", "data": [30, 70, 200, 300, 500, 800, 1500, 2900, 5000, 8000], },{ "label": "Reality", "data": [0, 1, 30, 70, 80, 100, 50, 80, 40, 150], },] `
+
 <strong>options</strong>(Array)(Optional): Pass [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) options as object array
 ` options=[{"yTickCount": 2}],`
 
 ### Barchart 📊
 
 <strong>id</strong> (String)(Required): Id to identify in dash callbacks.
+
 <strong>title</strong>(String)(Optional): Title for the chart.
+
 <strong>xLabel</strong>(String)(Optional): X axis label.
+
 <strong>yLabel</strong>(String)(Optional): Y axis label.
+
 <strong>labels</strong>(Array)(Required): Array of labels (Strings / Numbers, Example:`['A','B']`
+
 <strong>dataset</strong>(Array)(Required): Array of Python Dictionary.
 Example:` {"data": [30, 70,] },`
+
 <strong>options</strong>(Array)(Optional): Pass [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) options as object array `options=[{"yTickCount": 2}],`
 
 ### PieChart 🧿
 
 <strong>id</strong> (String)(Required): Id to identify in dash callbacks.
+
 <strong>title</strong>(String)(Optional): Title for the chart.
+
 <strong>xLabel</strong>(String)(Optional): X axis label.
+
 <strong>yLabel</strong>(String)(Optional): Y axis label.
+
 <strong>labels</strong>(Array)(Required): Array of labels (Strings / Numbers,Example: `["a", "b", "e", "f", "g"]`
+
 <strong>dataset</strong>(Array)(Required): Array of Python Dictionary, Example:`{"data": [500, 200, 80, 90, 100]},`
+
 <strong>options</strong>(Array)(Optional): Pass [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) options as object array ` options=[{ "innerRadius": 0.5,}],`
 
 ## Contributing
