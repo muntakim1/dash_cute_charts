@@ -160,8 +160,11 @@ If you have selected install_dependencies during the prompt, you can skip this p
 ## Maintainer 🤵
 
 ![](/demo-assets/rsz_profile.jpg)
+
 Muntakimur Rahaman
+
 IBM Certified Data Scientist
+
 website: [www.muntakim.xyz](www.muntakim.xyz)
 
 ## Credits 🙏
