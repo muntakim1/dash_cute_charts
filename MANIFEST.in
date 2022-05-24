@@ -1,0 +1,11 @@
+include dash_cute_charts/dash_cute_charts.min.js
+include dash_cute_charts/dash_cute_charts.min.js.map
+include dash_cute_charts/async-*.js
+include dash_cute_charts/async-*.js.map
+include dash_cute_charts/*-shared.js
+include dash_cute_charts/*-shared.js.map
+include dash_cute_charts/metadata.json
+include dash_cute_charts/package-info.json
+include README.md
+include LICENSE
+include package.json

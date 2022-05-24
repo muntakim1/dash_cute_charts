@@ -1,0 +1,170 @@
+{
+  "src/lib/components/BarChart.react.js": {
+    "description": "BarChart is an chartXkcd-react component.\nIt takes `labels`, and `dataset` as inputs.\ndisplays a BarChart.\nIt also takes title,xLabel,yLabel,options as optional inputs.\nuser can pass chart.xkcd options except the legend positions",
+    "displayName": "BarChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "labels": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "A labels for BarChart."
+      },
+      "dataset": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "The dataset for BarChart."
+      },
+      "xLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The XLabel for BarChart."
+      },
+      "yLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The YLabel for BarChart."
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The Title for BarChart."
+      },
+      "options": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Options for the BarChart."
+      }
+    }
+  },
+  "src/lib/components/LineChart.react.js": {
+    "description": "LineChart is an chartXkcd-react component.\nIt takes `labels`, and `dataset` as inputs.\ndisplays a LineChart.\nIt also takes title,xLabel,yLabel,options as optional inputs.\nuser can pass chart.xkcd options except the legend positions",
+    "displayName": "LineChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "labels": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "A labels for lineChart."
+      },
+      "dataset": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "The dataset for LineChart."
+      },
+      "xLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The XLabel for LineChart."
+      },
+      "yLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The YLabel for LineChart."
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The Title for LineChart."
+      },
+      "options": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Options for the LineChart."
+      }
+    }
+  },
+  "src/lib/components/PieChart.react.js": {
+    "description": "PieChart is an chartXkcd-react component.\nIt takes `labels`, and `dataset` as inputs.\ndisplays a PieChart.\nIt also takes title,xLabel,yLabel,options as optional inputs.\nuser can pass chart.xkcd options except the legend positions",
+    "displayName": "PieChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "labels": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "A labels for PieChart."
+      },
+      "dataset": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "The dataset for PieChart."
+      },
+      "xLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The XLabel for PieChart."
+      },
+      "yLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The YLabel for PieChart."
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The Title for PieChart."
+      },
+      "options": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Options for the PieChart."
+      }
+    }
+  }
+}
