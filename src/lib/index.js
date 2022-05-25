@@ -2,5 +2,14 @@
 import BarChart from './components/BarChart.react';
 import LineChart from './components/LineChart.react';
 import PieChart from './components/PieChart.react';
-
-export {LineChart, BarChart, PieChart};
+import RadarChart from './components/RadarChart.react';
+import ScatterChart from './components/ScatterChart.react';
+import StackedBarChart from './components/StackedChart.react';
+export {
+    LineChart,
+    BarChart,
+    PieChart,
+    ScatterChart,
+    StackedBarChart,
+    RadarChart,
+};

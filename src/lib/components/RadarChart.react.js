@@ -1,22 +1,22 @@
 import chartXkcd from 'chart.xkcd';
-import {Bar} from 'chart.xkcd-react';
+import {Radar} from 'chart.xkcd-react';
 import PropTypes from 'prop-types';
 import {Component} from 'react';
 /**
- * BarChart is an chartXkcd-react component.
+ * PieChart is an chartXkcd-react component.
  * It takes `labels`, and `dataset` as inputs.
- * displays a BarChart.
+ * displays a PieChart.
  * It also takes title,xLabel,yLabel,options as optional inputs.
  * user can pass chart.xkcd options except the legend positions
  */
-export default class BarChart extends Component {
+export default class RadarChart extends Component {
     render() {
-        const {id, labels, dataset, xLabel, yLabel, style, title, options} =
+        const {id, labels, dataset, xLabel, yLabel, title, style, options} =
             this.props;
 
         return (
             <div id={id} style={{...style}}>
-                <Bar
+                <Radar
                     config={{
                         title: title, // optional
                         xLabel: xLabel, // optional
@@ -38,45 +38,45 @@ export default class BarChart extends Component {
     }
 }
 
-BarChart.defaultProps = {};
+RadarChart.defaultProps = {};
 
-BarChart.propTypes = {
+RadarChart.propTypes = {
     /**
      * The ID used to identify this component in Dash callbacks.
      */
     id: PropTypes.string,
 
     /**
-     * A labels for BarChart.
+     * A labels for RadarChart.
      */
     labels: PropTypes.array.isRequired,
 
     /**
-     * The dataset for BarChart.
+     * The dataset for RadarChart.
      */
     dataset: PropTypes.array.isRequired,
 
     /**
-     * The XLabel for BarChart.
+     * The XLabel for RadarChart.
      */
     xLabel: PropTypes.string,
 
     /**
-     * The YLabel for BarChart.
+     * The YLabel for RadarChart.
      */
     yLabel: PropTypes.string,
 
     /**
-     * The Title for BarChart.
+     * The Title for RadarChart.
      */
     title: PropTypes.string,
 
     /**
-     * Options for the BarChart.
+     * Options for the RadarChart.
      */
     options: PropTypes.array,
     /**
-     * Options for the BarChart.
+     * Style for the RadarChart.
      */
     style: PropTypes.array,
 };
