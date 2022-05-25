@@ -17,6 +17,11 @@ Get started with demo example:
 
 ## Usage 👨‍🏫
 
+### What's new 🍭:
+
+    1. Added new charts (stacked,scatter and radarcharts)
+    2. Fixed some bugs.
+
 ### Install
 
 Install the dash-cute-charts from pypip using below command
