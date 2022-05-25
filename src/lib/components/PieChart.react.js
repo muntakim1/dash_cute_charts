@@ -11,11 +11,11 @@ import {Component} from 'react';
  */
 export default class PieChart extends Component {
     render() {
-        const {id, labels, dataset, xLabel, yLabel, style, title, options} =
+        const {id, labels, dataset, xLabel, yLabel, title, options} =
             this.props;
 
         return (
-            <div id={id} style={{...style}}>
+            <div id={id}>
                 <Pie
                     config={{
                         title: title, // optional
@@ -75,8 +75,4 @@ PieChart.propTypes = {
      * Options for the PieChart.
      */
     options: PropTypes.array,
-    /**
-     * Style for the PieChart.
-     */
-    style: PropTypes.array,
 };

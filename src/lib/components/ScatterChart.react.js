@@ -3,26 +3,24 @@ import {XY} from 'chart.xkcd-react';
 import PropTypes from 'prop-types';
 import {Component} from 'react';
 /**
- * PieChart is an chartXkcd-react component.
+ * ScatterChart is an chartXkcd-react component.
  * It takes `labels`, and `dataset` as inputs.
- * displays a PieChart.
+ * displays a ScatterChart.
  * It also takes title,xLabel,yLabel,options as optional inputs.
  * user can pass chart.xkcd options except the legend positions
  */
 export default class ScatterChart extends Component {
     render() {
-        const {id, labels, dataset, xLabel, yLabel, style, title, options} =
-            this.props;
+        const {id, dataset, xLabel, yLabel, title, options} = this.props;
 
         return (
-            <div id={id} style={{...style}}>
+            <div id={id}>
                 <XY
                     config={{
                         title: title, // optional
                         xLabel: xLabel, // optional
                         yLabel: yLabel, // optional
                         data: {
-                            labels: labels,
                             datasets: dataset,
                         },
                         options: {
@@ -45,11 +43,6 @@ ScatterChart.propTypes = {
      * The ID used to identify this component in Dash callbacks.
      */
     id: PropTypes.string,
-
-    /**
-     * A labels for ScatterChart.
-     */
-    labels: PropTypes.array.isRequired,
 
     /**
      * The dataset for ScatterChart.
@@ -75,8 +68,4 @@ ScatterChart.propTypes = {
      * Options for the ScatterChart.
      */
     options: PropTypes.array,
-    /**
-     * Style for the ScatterChart.
-     */
-    style: PropTypes.array,
 };

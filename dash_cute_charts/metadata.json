@@ -166,5 +166,166 @@
         "description": "Options for the PieChart."
       }
     }
+  },
+  "src/lib/components/RadarChart.react.js": {
+    "description": "RadarChart is an chartXkcd-react component.\nIt takes `labels`, and `dataset` as inputs.\ndisplays a RadarChart.\nIt also takes title,xLabel,yLabel,options as optional inputs.\nuser can pass chart.xkcd options except the legend positions",
+    "displayName": "RadarChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "labels": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "A labels for RadarChart."
+      },
+      "dataset": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "The dataset for RadarChart."
+      },
+      "xLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The XLabel for RadarChart."
+      },
+      "yLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The YLabel for RadarChart."
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The Title for RadarChart."
+      },
+      "options": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Options for the RadarChart."
+      }
+    }
+  },
+  "src/lib/components/ScatterChart.react.js": {
+    "description": "ScatterChart is an chartXkcd-react component.\nIt takes `labels`, and `dataset` as inputs.\ndisplays a ScatterChart.\nIt also takes title,xLabel,yLabel,options as optional inputs.\nuser can pass chart.xkcd options except the legend positions",
+    "displayName": "ScatterChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "dataset": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "The dataset for ScatterChart."
+      },
+      "xLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The XLabel for ScatterChart."
+      },
+      "yLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The YLabel for ScatterChart."
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The Title for ScatterChart."
+      },
+      "options": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Options for the ScatterChart."
+      }
+    }
+  },
+  "src/lib/components/StackedChart.react.js": {
+    "description": "StackedBarChart is an chartXkcd-react component.\nIt takes `labels`, and `dataset` as inputs.\ndisplays a StackedBarChart.\nIt also takes title,xLabel,yLabel,options as optional inputs.\nuser can pass chart.xkcd options except the legend positions",
+    "displayName": "StackedChart",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "labels": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "A labels for StackedBarChart."
+      },
+      "dataset": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "The dataset for StackedBarChart."
+      },
+      "xLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The XLabel for StackedBarChart."
+      },
+      "yLabel": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The YLabel for StackedBarChart."
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The Title for StackedBarChart."
+      },
+      "options": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Options for the StackedBarChart."
+      }
+    }
   }
 }

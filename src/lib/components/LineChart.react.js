@@ -11,11 +11,11 @@ import {Component} from 'react';
  */
 export default class LineChart extends Component {
     render() {
-        const {id, labels, dataset, xLabel, yLabel, style, title, options} =
+        const {id, labels, dataset, xLabel, yLabel, title, options} =
             this.props;
 
         return (
-            <div id={id} style={{...style}}>
+            <div id={id}>
                 <Line
                     config={{
                         title: title, // optional
@@ -75,8 +75,4 @@ LineChart.propTypes = {
      * Options for the LineChart.
      */
     options: PropTypes.array,
-    /**
-     * Style for the LineChart.
-     */
-    style: PropTypes.array,
 };

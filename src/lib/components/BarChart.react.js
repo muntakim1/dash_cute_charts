@@ -11,11 +11,11 @@ import {Component} from 'react';
  */
 export default class BarChart extends Component {
     render() {
-        const {id, labels, dataset, xLabel, yLabel, style, title, options} =
+        const {id, labels, dataset, xLabel, yLabel, title, options} =
             this.props;
 
         return (
-            <div id={id} style={{...style}}>
+            <div id={id}>
                 <Bar
                     config={{
                         title: title, // optional
@@ -75,8 +75,4 @@ BarChart.propTypes = {
      * Options for the BarChart.
      */
     options: PropTypes.array,
-    /**
-     * Options for the BarChart.
-     */
-    style: PropTypes.array,
 };

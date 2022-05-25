@@ -1,7 +1,7 @@
 import chartXkcd from 'chart.xkcd';
-import {StackedBar} from 'chart.xkcd-react';
 import PropTypes from 'prop-types';
 import {Component} from 'react';
+import StackedBar from '../StackedBar';
 /**
  * StackedBarChart is an chartXkcd-react component.
  * It takes `labels`, and `dataset` as inputs.
@@ -9,13 +9,13 @@ import {Component} from 'react';
  * It also takes title,xLabel,yLabel,options as optional inputs.
  * user can pass chart.xkcd options except the legend positions
  */
-export default class StackedBarChart extends Component {
+export default class StackedChart extends Component {
     render() {
-        const {id, labels, dataset, xLabel, yLabel, style, title, options} =
+        const {id, labels, dataset, xLabel, yLabel, title, options} =
             this.props;
 
         return (
-            <div id={id} style={{...style}}>
+            <div id={id}>
                 <StackedBar
                     config={{
                         title: title, // optional
@@ -38,9 +38,9 @@ export default class StackedBarChart extends Component {
     }
 }
 
-StackedBarChart.defaultProps = {};
+StackedChart.defaultProps = {};
 
-StackedBarChart.propTypes = {
+StackedChart.propTypes = {
     /**
      * The ID used to identify this component in Dash callbacks.
      */
@@ -75,8 +75,4 @@ StackedBarChart.propTypes = {
      * Options for the StackedBarChart.
      */
     options: PropTypes.array,
-    /**
-     * Style for the StackedBarChart.
-     */
-    style: PropTypes.array,
 };

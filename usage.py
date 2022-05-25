@@ -51,6 +51,79 @@ app.layout = html.Div(
             labels=["github stars", "patrons"],
             options=[{"yTickCount": 2}],
         ),
+        dash_cute_charts.StackedChart(
+            id="barchart-stacked",
+            title="github stars VS patron number",
+            dataset=[
+                {
+                    "label": "Issues",
+                    "data": [12, 19, 11, 29, 17],
+                },
+                {
+                    "label": "PRs",
+                    "data": [3, 5, 2, 4, 1],
+                },
+                {
+                    "label": "Merges",
+                    "data": [2, 3, 0, 1, 1],
+                },
+            ],
+            labels=["Jan", "Feb", "Mar", "April", "May"],
+        ),
+        dash_cute_charts.RadarChart(
+            id="barchart-radar",
+            title="github stars VS patron number",
+            dataset=[
+                {
+                    "label": "Plan",
+                    "data": [30, 70, 200, 300, 500, 800, 1500, 2900, 5000, 8000],
+                },
+                {
+                    "label": "Reality",
+                    "data": [0, 1, 30, 70, 80, 100, 50, 80, 40, 150],
+                },
+            ],
+            labels=["github stars", "patrons"],
+            options=[{"yTickCount": 2}],
+        ),
+        html.Div(
+            [
+                dash_cute_charts.ScatterChart(
+                    id="barchart-scatter",
+                    title="github stars VS patron number",
+                    dataset=[
+                        {
+                            "label": "Pikachu",
+                            "data": [
+                                {"x": 3, "y": 10},
+                                {"x": 4, "y": 122},
+                                {"x": 10, "y": 100},
+                                {"x": 1, "y": 2},
+                                {"x": 2, "y": 4},
+                            ],
+                        },
+                        {
+                            "label": "Squirtle",
+                            "data": [
+                                {"x": 3, "y": 122},
+                                {"x": 4, "y": 212},
+                                {"x": -3, "y": 100},
+                                {"x": 1, "y": 1},
+                                {"x": 1.5, "y": 12},
+                            ],
+                        },
+                    ],
+                    options=[
+                        {
+                            "showLine": True,
+                            "timeFormat": "undefined",
+                            "dotSize": 0.5,
+                            "dataColors": ["#dd4528", "#28a3dd", "#f3db52"],
+                        }
+                    ],
+                ),
+            ]
+        ),
     ]
 )
 

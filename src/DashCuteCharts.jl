@@ -8,6 +8,9 @@ const version = "0.0.2"
 include("jl/barchart.jl")
 include("jl/linechart.jl")
 include("jl/piechart.jl")
+include("jl/radarchart.jl")
+include("jl/scatterchart.jl")
+include("jl/stackedchart.jl")
 
 function __init__()
     DashBase.register_package(

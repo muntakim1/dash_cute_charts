@@ -3,19 +3,19 @@ import {Radar} from 'chart.xkcd-react';
 import PropTypes from 'prop-types';
 import {Component} from 'react';
 /**
- * PieChart is an chartXkcd-react component.
+ * RadarChart is an chartXkcd-react component.
  * It takes `labels`, and `dataset` as inputs.
- * displays a PieChart.
+ * displays a RadarChart.
  * It also takes title,xLabel,yLabel,options as optional inputs.
  * user can pass chart.xkcd options except the legend positions
  */
 export default class RadarChart extends Component {
     render() {
-        const {id, labels, dataset, xLabel, yLabel, title, style, options} =
+        const {id, labels, dataset, xLabel, yLabel, title, options} =
             this.props;
 
         return (
-            <div id={id} style={{...style}}>
+            <div id={id}>
                 <Radar
                     config={{
                         title: title, // optional
@@ -75,8 +75,4 @@ RadarChart.propTypes = {
      * Options for the RadarChart.
      */
     options: PropTypes.array,
-    /**
-     * Style for the RadarChart.
-     */
-    style: PropTypes.array,
 };
