@@ -19,8 +19,6 @@ Example:`[{"label": "Plan", "data": [30, 70, 200, 300, 500, 800, 1500, 2900, 500
 <strong>options</strong>(Array)(Optional): Pass [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) options as object array
 ` options=[{"yTickCount": 2}],`
 
-<strong>style</strong>(Array)(Optional): Pass jsx styles as a array ` style=[{"width":"100px"}]`
-
 ### Barchart 📊
 
 <strong>id</strong> (String)(Required): Id to identify in dash callbacks.
@@ -38,8 +36,6 @@ Example:` {"data": [30, 70,] },`
 
 <strong>options</strong>(Array)(Optional): Pass [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) options as object array `options=[{"yTickCount": 2}],`
 
-<strong>style</strong>(Array)(Optional): Pass jsx styles as a array ` style=[{"width":"100px"}]`
-
 ### PieChart 🧿
 
 <strong>id</strong> (String)(Required): Id to identify in dash callbacks.
@@ -55,8 +51,6 @@ Example:` {"data": [30, 70,] },`
 <strong>dataset</strong>(Array)(Required): Array of Python Dictionary, Example:`{"data": [500, 200, 80, 90, 100]},`
 
 <strong>options</strong>(Array)(Optional): Pass [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) options as object array ` options=[{ "innerRadius": 0.5,}],`
-
-<strong>style</strong>(Array)(Optional): Pass jsx styles as a array ` style=[{"width":"100px"}]`
 
 ### RadarChart 🧿
 
@@ -74,8 +68,6 @@ Example:` {"data": [30, 70,] },`
 
 <strong>options</strong>(Array)(Optional): Pass [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) options as object array ` options=[{ "innerRadius": 0.5,}],`
 
-<strong>style</strong>(Array)(Optional): Pass jsx styles as a array ` style=[{"width":"100px"}]`
-
 ### ScatterChart 🧿
 
 <strong>id</strong> (String)(Required): Id to identify in dash callbacks.
@@ -86,13 +78,9 @@ Example:` {"data": [30, 70,] },`
 
 <strong>yLabel</strong>(String)(Optional): Y axis label.
 
-<strong>labels</strong>(Array)(Required): Array of labels (Strings / Numbers,Example: `["a", "b", "e", "f", "g"]`
-
-<strong>dataset</strong>(Array)(Required): Array of Python Dictionary, Example:`{"data": [500, 200, 80, 90, 100]},`
+<strong>dataset</strong>(Array)(Required): Array of Python Dictionary, Example:`{"label":"Pickachu", "data": [ {"x": 3, "y": 10}, {"x": 4, "y": 122}, {"x": 10, "y": 100}, {"x": 1, "y": 2}, {"x": 2, "y": 4}, ],},`
 
 <strong>options</strong>(Array)(Optional): Pass [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) options as object array ` options=[{ "innerRadius": 0.5,"showline":true}],`
-
-<strong>style</strong>(Array)(Optional): Pass jsx styles as a array ` style=[{"width":"100px"}]`
 
 ### StackedBarChart 🧿
 
@@ -109,5 +97,3 @@ Example:` {"data": [30, 70,] },`
 <strong>dataset</strong>(Array)(Required): Array of Python Dictionary, Example:`{"data": [500, 200, 80, 90, 100]},`
 
 <strong>options</strong>(Array)(Optional): Pass [chart.xkcd-react](https://www.npmjs.com/package/chart.xkcd-react) options as object array ` options=[{ "innerRadius": 0.5}],`
-
-<strong>style</strong>(Array)(Optional): Pass jsx styles as a array ` style=[{"width":"100px"}]`
