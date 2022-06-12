@@ -1,6 +1,6 @@
 Package: dashCuteCharts
 Title: A cutechart integration for DashPlotly
-Version: 0.0.2
+Version: 0.0.4
 Description: A cutechart integration for DashPlotly
 Depends: R (>= 3.0.2)
 Imports: 

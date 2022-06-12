@@ -1,6 +1,6 @@
 {
     "name": "dash_cute_charts",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A cutechart integration for DashPlotly",
     "main": "build/index.js",
     "scripts": {

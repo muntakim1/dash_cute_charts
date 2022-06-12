@@ -86,43 +86,39 @@ app.layout = html.Div(
             labels=["github stars", "patrons"],
             options=[{"yTickCount": 2}],
         ),
-        html.Div(
-            [
-                dash_cute_charts.ScatterChart(
-                    id="barchart-scatter",
-                    title="github stars VS patron number",
-                    dataset=[
-                        {
-                            "label": "Pikachu",
-                            "data": [
-                                {"x": 3, "y": 10},
-                                {"x": 4, "y": 122},
-                                {"x": 10, "y": 100},
-                                {"x": 1, "y": 2},
-                                {"x": 2, "y": 4},
-                            ],
-                        },
-                        {
-                            "label": "Squirtle",
-                            "data": [
-                                {"x": 3, "y": 122},
-                                {"x": 4, "y": 212},
-                                {"x": -3, "y": 100},
-                                {"x": 1, "y": 1},
-                                {"x": 1.5, "y": 12},
-                            ],
-                        },
+        dash_cute_charts.ScatterChart(
+            id="barchart-scatter",
+            title="github stars VS patron number",
+            dataset=[
+                {
+                    "label": "Pikachu",
+                    "data": [
+                        {"x": 3, "y": 10},
+                        {"x": 4, "y": 122},
+                        {"x": 10, "y": 100},
+                        {"x": 1, "y": 2},
+                        {"x": 2, "y": 4},
                     ],
-                    options=[
-                        {
-                            "showLine": True,
-                            "timeFormat": "undefined",
-                            "dotSize": 0.5,
-                            "dataColors": ["#dd4528", "#28a3dd", "#f3db52"],
-                        }
+                },
+                {
+                    "label": "Squirtle",
+                    "data": [
+                        {"x": 3, "y": 122},
+                        {"x": 4, "y": 212},
+                        {"x": -3, "y": 100},
+                        {"x": 1, "y": 1},
+                        {"x": 1.5, "y": 12},
                     ],
-                ),
-            ]
+                },
+            ],
+            options=[
+                {
+                    "showLine": True,
+                    "timeFormat": "undefined",
+                    "dotSize": 0.5,
+                    "dataColors": ["#dd4528", "#28a3dd", "#f3db52"],
+                }
+            ],
         ),
     ]
 )
